@@ -10,4 +10,5 @@ fun main() {
     println(age)
     age = -345
     println(age)
+    println()
 }
