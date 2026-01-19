@@ -1,6 +1,10 @@
 import kotlin.math.max
 
 class OutpostWorker(val name:String) {
+
+    var maxEnergy:Int=100
+        private set
+
     var energy: Int=maxEnergy
         set(value){
             field=value.coerceIn(0,maxEnergy)
@@ -26,8 +30,7 @@ class OutpostWorker(val name:String) {
         println("$name повышает уровень $level | Максимальная энергия увеличена до $maxEnergy ")
     }
 
-    var maxEnergy:Int=100
-        private set
+
 }
 
 fun main(){
