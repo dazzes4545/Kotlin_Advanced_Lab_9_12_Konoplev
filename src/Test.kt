@@ -5,10 +5,28 @@ var age: Int=18
     }
 
 fun main() {
-    println(age)
-    age =45
-    println(age)
-    age = -345
-    println(age)
-    println()
+//    println(age)
+//    age =45
+//    println(age)
+//    age = -345
+//    println(age)
+//    println()
+    val sword = Item(1, "Sword", 1)
+    val betterSword = sword.copy(quantity = 2)
+    println(sword.toString())
+    println(betterSword.toString())
+    val(id, name, quantity) = betterSword
+    println("Id предмета: $id\n" +
+            "Name: $name\n" +
+            "Count: $quantity\n")
+}
+
+data class Item(
+    val id: Int,
+    val name: String,
+    val quantity: Int
+){
+    override fun toString(): String {
+        return "Id предмета: $id\nName: $name\nCount: $quantity\n"
+    }
 }
