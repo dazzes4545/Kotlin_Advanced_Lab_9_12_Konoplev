@@ -1,3 +1,4 @@
+import java.time.Period
 import kotlin.math.min
 
 fun main(){
@@ -11,4 +12,13 @@ fun main(){
 
     val bonus = minerals.copy(amount = minerals.amount+50)
     println("Копия минералов с бонусом: $bonus")
+
+//    val denis: Human
+//    val pavel: Human=Human("Pavel")
+
+    val denis: Person = Person("Denis", 1)
+    val maksim: Human = Person("Maksim", 1)
+    denis.hello()
+    maksim.hello()
+
 }
