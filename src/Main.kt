@@ -8,6 +8,7 @@ fun main(){
     manager.add(gas)
     manager.prinalAll()
     println()
+
     val bonus = minerals.copy(amount = minerals.amount+50)
     println("Копия минералов с бонусом: $bonus")
 }
