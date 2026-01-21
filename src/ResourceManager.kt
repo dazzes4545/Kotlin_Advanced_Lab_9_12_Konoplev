@@ -16,11 +16,3 @@ class ResourceManager {
     }
 }
 
-fun main(){
-    val manager = ResourceManager()
-    val minerals = OutpustResource(1, "Minerals", 300)
-    val gas = OutpustResource(2,"GAS",100)
-    manager.add(minerals)
-    manager.add(gas)
-    manager.prinalAll()
-}
